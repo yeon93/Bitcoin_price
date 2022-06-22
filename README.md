@@ -17,7 +17,7 @@
 
 
 ## Model
-+ Sequential + LSTM
+시간 흐름에 따른 sequential 데이터이기 때문에, 긴 시간에 분포한 패턴(eg.경제 사이클)을 학습하기 위해 LSTM 모델 선택
 + loss='hube', optimizer='adam', metrics=['mse']
 + 테스트 성능 : loss 0.0207, mse 0.0415  
 ![output](https://user-images.githubusercontent.com/88722429/175094954-d19eebab-7c03-4d50-ba3d-853717eab61d.png)
