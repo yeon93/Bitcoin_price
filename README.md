@@ -19,7 +19,7 @@
 ## Model
 + Sequential + LSTM
 + loss='hube', optimizer='adam', metrics=['mse']
-+ 테스트 성능 : loss 0.0207, mse 0.0415
++ 테스트 성능 : loss 0.0207, mse 0.0415  
 ![output](https://user-images.githubusercontent.com/88722429/175094954-d19eebab-7c03-4d50-ba3d-853717eab61d.png)
 
 
