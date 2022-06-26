@@ -21,10 +21,10 @@ pyupbit 라이브러리 이용, 30분봉 데이터 선택
 ![output](https://user-images.githubusercontent.com/88722429/175494033-9e712827-7f5c-44bf-b6ce-cad4d6171338.png)
 
 ### 2. 코사인 유사도를 이용해 가장 비슷한 과거의 패턴을 통해 다음 가격을 예상
-+ close, volume 2개 feature의 패턴 이용
-![output](https://user-images.githubusercontent.com/88722429/175493207-b38607d9-b485-469b-bd7f-eced6bc01568.png)
++ close, volume 2개 feature의 패턴 이용  
+![output](https://user-images.githubusercontent.com/88722429/175807047-f3b628c9-06c0-43ca-8174-27303d8ac08a.png)
 + StandardScaler를 사용해 정규화
-+ window_size=100, 데이터를 처음부터 끝까지 슬라이딩하며 학습해 미래 10개의 캔들을 예측하도록 함
++ window_size=100, 데이터를 처음부터 끝까지 슬라이딩하며 학습해 미래 20개의 캔들을 예측하도록 함
 + 두 특성의 코사인 유사도를 계산해 평균값을 예측에 사용
 ![output](https://user-images.githubusercontent.com/88722429/175493946-94db3822-d52a-4434-a317-f982793511f5.png)
 
@@ -35,4 +35,4 @@ pyupbit 라이브러리 이용, 30분봉 데이터 선택
 ## 한계
 + 비트코인 가격에 영향을 주는 요소가 매우 많음(수요/공급, 실물경제, 심리적 요인, 전쟁 등)
 + 예측가격 그래프 역시 그릴 수는 있으나, 실질적으로 예측이라기 보다는 후행분석에 가까움
-+ 예상 수익률을 계산해보았을 때 실제로 활용하기에는 적합하지 
++ 예상 수익률을 계산해보았을 때 실제로 활용하기에는 적합하지 못함
